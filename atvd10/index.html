@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Formulário</title>
+</head>
+<body>
+    <h3>Formulários</h3>
+    <p>O formulário HTML é um formulário de preenchimento de <br>
+        dados ou que resulta em uma ação desejada utilizando a <br>
+        linguagem de marcação HTML. É formado por um ou mais widgets. <br> 
+        Esses widgets são campos de textos, caixas de seleção, botões, <br>
+        radio buttons e checkboxes utilizando ferramentas do próprio HTML. <br> 
+        Dessa forma, o usuário pode interagir com a página ao executar <br>
+        ações através desses formulários.
+    </p>
+    <h3>Exemplo</h3>
+    <hr>
+    <br>
+    <h4>Faça seu cadastro:</h4>
+    <form>
+        <div>
+            <h5>Informações Pessoais</h5>
+            <label for="nome">Nome:</label>
+            <input name="nome" type="text"
+            placeholder="Digite seu nome aqui">
+            <!--Label é como uma etiqueta de o que é aquele campo-->
+            <!--Type é o tipo de informação que será colocada, neste caso "text" 
+            é para um texto comum -->
+            <!--Placeholder é a frase em cinza dentro da caixinha de texto-->
+            <br> <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Digite seu email aqui">
+            <br> <br>
+            <label>Telefone:</label>
+            <input type="tel" name="telefone" placeholder="Digite seu telefone aqui">
+            <br> <br>
+            <label for="genero">Gênero:</label>
+            <input type="radio" name="genero"> Masculino
+            <input type="radio" name="genero"> Feminino
+            <input type="radio" name="genero"> Não binário
+            <br> <br>
+            <label for="nascimento">Data de nascimento:</label>
+            <input name="nascimento" type="datetime-local">
+            <br> <br>
+        </div>
+        <div>
+            <h5>Informações para personalização</h5>
+            Selecione a cor tema: <input type="color" name="cor" value="#FFFFFF">
+            <br><br>
+            Nível atual: <input type="number" name="quantidade" min="1" max="5">
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
